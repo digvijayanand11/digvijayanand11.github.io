@@ -1,0 +1,29 @@
+permalink: /posts/:title
+markdown: kramdown
+  
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+name: Ph.D. Student
+url: digvijayanand11.github.io
+enforce_ssl: digvijayanand11.github.io
+description: Digvijay's personal website
+
+collections:
+  ml:
+    output: true
+  math:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: ml
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: math
+    values:
+      layout: post
